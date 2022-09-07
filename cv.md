@@ -41,3 +41,7 @@ Unfortunately all my projects since 2000 are closed by now...
 ## Education
 
 High Education, MSTU n.a. Baumann
+
+## Language
+
+English, Intermediate
