@@ -1,1 +1,1 @@
-https://jukfloyd.github.io/rsschool-cv/cv
+https://jukfloyd.github.io/rsschool-cv/
