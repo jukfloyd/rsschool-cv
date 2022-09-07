@@ -16,6 +16,8 @@
 
 <h1>Aleksei Zhuchkov</h1>
 
+<img alt="avatar" src="avatar.jpg" width="100">
+
 <h3>Contacts</h3>
     
 <p>Mob.: +7-929-930-09-06</p>
@@ -37,38 +39,38 @@
 <h3>Code examples</h3>
 
 
-<code>
-    <pre>
-    function spiralize(N) {
-      if (N < 1 || parseInt(N) != N || typeof N != 'number') return [];
-      let matrix = (N == 1) ? [[]] : [...Array(N)].map(item => [...Array(N)].map(item => 0));
-      const fN = Math.floor(N/2);
-      for (let n=0; n<fN; n++) {
-        let iL = N-n*2*2;
-        if (iL == 1) {
-          matrix[fN][fN] = 1;
-        }
-        for (let i = 1; i<= (iL-1)*4; i++) {
-          if (i >= 1 && i <= iL)
-            matrix[0+n*2][i-1+n*2] = 1;
-          if (i > iL && i <= (iL-1)*2)
-            matrix[i-iL+n*2][N-1-n*2] = 1;
-          if (i > (iL-1)*2 && i <= (iL-1)*3 + 1) {
-            if (i == (iL-1)*3 + 1 && iL == 2) break;
-            matrix[N-1-n*2][iL*3-2-i+n*2] = 1;
+<pre>
+    <code>
+        function spiralize(N) {
+            if (N &lt; 1 || parseInt(N) != N || typeof N != 'number') return [];
+            let matrix = (N == 1) ? [[]] : [...Array(N)].map(item =&gt; [...Array(N)].map(item =&gt; 0));
+            const fN = Math.floor(N/2);
+            for (let n=0; n&lt;fN; n++) {
+              let iL = N-n*2*2;
+              if (iL == 1) {
+                matrix[fN][fN] = 1;
+              }
+              for (let i = 1; i&lt;= (iL-1)*4; i++) {
+                if (i &gt;= 1 &amp;&amp; i &lt;= iL)
+                  matrix[0+n*2][i-1+n*2] = 1;
+                if (i &gt; iL &amp;&amp; i &lt;= (iL-1)*2)
+                  matrix[i-iL+n*2][N-1-n*2] = 1;
+                if (i &gt; (iL-1)*2 &amp;&amp; i &lt;= (iL-1)*3 + 1) {
+                  if (i == (iL-1)*3 + 1 &amp;&amp; iL == 2) break;
+                  matrix[N-1-n*2][iL*3-2-i+n*2] = 1;
+                }
+                if (iL &gt; 2) {
+                  if (i &gt; (iL-1)*3 + 1 &amp;&amp; i &lt;= (iL-1)*4-1) 
+                    matrix[(iL-1)*4-i+n*2+1][n*2] = 1;
+                  if (i == (iL-1)*4-1 &amp;&amp; iL &gt; 4) 
+                    matrix[(iL-1)*4-i+n*2+1][n*2+1] = 1;
+                }
+              }
+            }
+            return matrix;
           }
-          if (iL > 2) {
-            if (i > (iL-1)*3 + 1 && i <= (iL-1)*4-1) 
-              matrix[(iL-1)*4-i+n*2+1][n*2] = 1;
-            if (i == (iL-1)*4-1 && iL > 4) 
-              matrix[(iL-1)*4-i+n*2+1][n*2+1] = 1;
-          }
-        }
-      }
-      return matrix;
-    }
-    </pre>
-</code>
+    </code>
+</pre>
     
 <h3>Experience</h3>
 
