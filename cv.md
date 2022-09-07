@@ -2,7 +2,7 @@
 
 ## Contacts
 
-Mob.: +7-929-930-09-06
+Mob.: +7-929-930-09-06  
 E-mail: zhuchkovav@gmail.com
 
 ## About me
@@ -50,9 +50,9 @@ function spiralize(N) {
 
 ## Experience
 
-6-years of Perl-programming
-5-years of C# programming
-5-years of PHP-programming
+6-years of Perl-programming  
+5-years of C# programming  
+5-years of PHP-programming  
 Unfortunately all my projects since 2000 are closed by now...
 
 ## Education
